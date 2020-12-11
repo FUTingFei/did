@@ -1,3 +1,7 @@
+pub mod did;
+use did::DID;
+
 fn main() {
-    println!("Hello, did!");
+    let example = DID::new("example", "123456789asdfghj");
+    println!("{}", example.parse());
 }
